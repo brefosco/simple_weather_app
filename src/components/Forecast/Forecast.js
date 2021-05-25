@@ -3,14 +3,17 @@ import styled from "styled-components";
 import { Container, Grid } from "@material-ui/core";
 
 const CleanForecast = (props) => {
+  // eslint-disable-next-line no-unused-vars
   const { dailyForecast, hourlyForecast } = props;
   // TODO: Add hourly forecast
 
+  // eslint-disable-next-line no-extend-native
   Date.prototype.addDays = function (days) {
     const date = new Date(this.valueOf());
     date.setDate(date.getDate() + days);
     return date;
   };
+  
   const today = new Date();
 
   React.useEffect(() => {}, []);
