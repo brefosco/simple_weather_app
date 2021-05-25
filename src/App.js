@@ -62,6 +62,7 @@ function App() {
       getAddressFromCoords();
       getCurrentWeather();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentCoords]);
 
   return (
